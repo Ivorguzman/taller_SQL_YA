@@ -47,4 +47,3 @@ SELECT  *  FROM libros  WHERE editorial <> 'Emece';
 
 
 
-
