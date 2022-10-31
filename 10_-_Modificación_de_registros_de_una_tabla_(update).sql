@@ -88,10 +88,19 @@ UPDATE  usuarios SET clave='Real Madrid'; -- no se puede remplazar
 SET SQL_SAFE_UPDATES=0; -- permite realizar cambio de actualizacion
 SELECT @@SQL_SAFE_UPDATES;-- se verifica el estado de   SQL_SAFE_UPDATES
 
-describe  usuarios;
+DESCRIBE  usuarios; -- uso de la forma clasica
+DESC usuarios; -- uso de la forma abreviada
 
 
-UPDATE usuarios SET clave='Real Madrid';
+UPDATE usuarios SET clave='Real Madrid' WHERE clave='Marito';
+
+SELECT nombre,clave  FROM usuarios;
+
+UPDATE  usuarios  SET nombre='Ivor' WHERE nombre='Marcelo';
+
+UPDATE usuarios SET nombre='Alexander', clave='qsl ' WHERE nombre='Leonardo';
+ 
+
 
 
 
