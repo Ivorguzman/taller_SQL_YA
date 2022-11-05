@@ -26,7 +26,7 @@ sexo VARCHAR(1),
 domicilio VARCHAR(30),
 ciudad VARCHAR(30),
 teléfono VARCHAR(11),
-monto_compra FLOAT UNSIGNED
+monto_compra DOUBLE UNSIGNED
 
 );
 
