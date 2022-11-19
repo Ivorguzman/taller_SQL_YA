@@ -105,7 +105,7 @@ SELECT * FROM gases;
 Un banco tiene registrados las cuentas corrientes de sus clientes en una tabla llamada "cuentas".
 
 1- Elimine la tabla "cuentas" si existe. 
-2- Cree la tabla eligiendo el tipo de dato adecuado.
+2- Cree la tabla eligiendo el tipo de dato adecuado:
 - Número de cuenta: entero positivo, no nulo,
 - Documento del propietario de la cuenta: cadena de caracteres de 8 de longitud (siempre 8), no nulo 
 - Nombre del propietario de la cuenta: cadena de caracteres, 
@@ -116,6 +116,22 @@ Un banco tiene registrados las cuentas corrientes de sus clientes en una tabla l
 
 DROP TABLE IF EXISTS cuentas;
 
+
+CREATE TABLE cuentas(
+
+Número_cuenta INTEGER UNSIGNED NOT NULL,
+Documento_cedula VARCHAR(8) NOT NULL,
+Propietario_cuenta VARCHAR(29),
+Saldo  FLOAT(9,2)
+
+);
+
+DESC cuentas;
+
+INSERT INTO  cuentas VALUES (1234, '22555666',  'Perez Luis',  2000.60);
+INSERT INTO  cuentas VALUES (3900, '35098098',  'Juarez Ana',  -232.00);
+
+SELECT * FROM cuentas;
 
 
  
